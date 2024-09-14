@@ -92,6 +92,24 @@
     </style>
 </head>
 <body>
+    <main>
+        <form action="submit.php" method="post">
+            <input type="text" name="fullname" placeholder="first_name"  id="" class="grid-input" required>
+            <input type="text" name="lastname" placeholder="last_name"   id="" class="grid-input" required> 
+            <input type="email" name="email" placeholder="user email" class="grid-input" required>
+            <input type="password" name="password" placeholder="user pass" class="grid-input" required>
+            <input type="date" name="date" min="<?php echo date('Y-m-d'); ?>" required>
+            
+            <input type="radio" name="year-level" id="" value="1"><label for="year-level">Java</label>
+            <input type="radio" name="year-level" id="" value="2"><label for="year-level">C++</label>
+            <input type="radio" name="year-level" id="" value="3"><label for="year-level">PHP</label>
+            
+
+            <input type="submit" value="click me">
+            <input type="reset" value="this is reset">
+            
     
+        </form>
+    </main>
 </body>
 </html> 
